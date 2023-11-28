@@ -1405,7 +1405,9 @@ f.slider_section .box .detail-box .btn-box a {
 }
 
 .contact_section .map_container {
-  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  height: 430px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
