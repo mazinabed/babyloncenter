@@ -49,29 +49,36 @@
             </button>
           </div>
           <div class="overlay-content">
-            <a class="" href="index.html">
+            <a class="active" href="indexE.html">
               Home
             </a>
-            <a class="" href="about.html">
+            <a class="" href="aboutE.html">
               About
             </a>
-            <a class="" href="service.html">
+            <a class="" href="serviceE.html">
               Services
             </a>
-            <a class="" href="testimonial.html">
-              Testimonial
+            <a class="" href="trainingE.html">
+              Training Courses
             </a>
-            <a class="" href="news.html">
+            <!-- <a class="" href="news.html">
               Latest News
-            </a>
-            <a class="active" href="contact.html">
+            </a> -->
+            <a class="" href="contactE.html">
               Contact Us
             </a>
+            <a class="" href="index.html">
+              ِعربي
+            </a>
+          </a>
+          <a class="" href="indexE.html">
+            English
+          </a>
           </div>
         </div>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="indexE.html">
           <span>
-            Seomark
+            Babylon Center
           </span>
         </a>
         <div class="user_option">
@@ -86,18 +93,19 @@
         </div>
         <div class="name_style">
           <h6>
-            S
-            e
-            o
-            M
+            B
             a
-            r
-            k
-            e
-            t
-            i
+            b
+            y
+            l
+            o
             n
-            g
+            C
+            e
+            n
+            t
+            e
+            r
           </h6>
         </div>
       </nav>
@@ -105,49 +113,114 @@
     <!-- end header section -->
   </div>
 
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2 style="color: #f7941d; padding: 10px;">
+                Contact Babylon Center
+              </h2>
+            </div>
+      <h2>We are ready to work with you and Fing solutions</h2>
+      
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <div class="stripe_design sd1"></div>
+            <div class="stripe_design sd2"></div>
+            <div class="stripe_design sd3"></div>
+            <div class="stripe_design sd4"></div>
+            <div class="stripe_design sd5"></div>
+            <div class="stripe_design sd6"></div>
+            <img src="images/about-img.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- contact section -->
 
   <section class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+        <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-1">
           <div class="form_container">
             <div class="heading_container">
-              <h2>
-                Contact Now For Work
+              <h2 style="color: #f7941d;">
+                Contact Now
               </h2>
             </div>
-            <form action="#">
+      
+            <form id="contactForm" action="#">
               <div>
-                <input type="text" placeholder="Full Name " />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
+                  <input type="text" id="fullName" placeholder="Full Name" />
               </div>
               <div>
-                <input type="text" placeholder="Phone number" />
+                  <input type="email" id="email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                  <input type="text" id="phoneNumber" placeholder="Phone number" />
               </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
+              <div>
+                  <input type="text" id="message" class="message-box" placeholder="Message" />
               </div>
-            </form>
+              <div class="d-flex">
+                  <button type="button" onclick="submitForm()">SEND</button>
+              </div>
+          </form>
+          
           </div>
+          
         </div>
-        <div class="col-md-6  px-0">
+           <div class="col-md-5 col-lg-5 offset-md-1 offset-lg-1">
+            <div class="card map_container ">
+              <!-- <div class="card-header text-center ">
+                  <h5>Contact Information</h5>
+              </div>
+              <div class="card-body ">
+                  <p><strong>Email:</strong> info@babyloncenter.com</p>
+                  <p><strong>Phone:</strong> +123 456 7890</p>
+                  <p><strong>Address:</strong> Babylon Street, Babylon City</p>
+              </div> -->
+              <div class="card">
+                <div class="card-header" style="color: #f7941d;">Phone Numbers</div>
+                <div class="card-body">
+                    <p><strong>Main Office:</strong> +123 456 7890</p>
+                    <p><strong>Support:</strong> +987 654 3210</p>
+                </div>
+                <div class="card-footer text-muted">
+                    For phone inquiries
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" style="color: #f7941d;">Email Addresses</div>
+                <div class="card-body">
+                    <p><strong>General:</strong> info@example.com</p>
+                    <p><strong>Support:</strong> support@example.com</p>
+                </div>
+                <div class="card-footer text-muted">
+                    For email communication
+                </div>
+            </div>
+          </div>
+        
+        </div>
+        <!-- <div class="col-md-6  px-0">
           <div class="map_container">
             <div class="map">
               <div id="googleMap"></div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
+    <div class="card-footer text-center">
+      <p>Follow us on <a href="#" style="color: #0a1b89;">Twitter</a> and <a href="#" style="color: #0a1b89;">Facebook</a></p>
+  </div>
   </section>
 
   <!-- end contact section -->
@@ -256,6 +329,7 @@
       </div>
     </div>
   </section>
+  
 
   <!-- end info section -->
 
@@ -273,7 +347,27 @@
     </div>
   </footer>
   <!-- footer section -->
+<script>
+  function submitForm() {
+    // Get form values
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var message = document.getElementById('message').value;
 
+    // Construct mailto link
+    var mailtoLink = "mailto:mazin_a_abd@yahoo.com"
+        + "?subject=Contact Form Submission"
+        + "&body=Full%20Name:%20" + encodeURIComponent(fullName)
+        + "%0D%0AEmail:%20" + encodeURIComponent(email)
+        + "%0D%0APhone%20Number:%20" + encodeURIComponent(phoneNumber)
+        + "%0D%0AMessage:%20" + encodeURIComponent(message);
+
+    // Open the default email client with the mailto link
+    window.location.href = mailtoLink;
+}
+
+</script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
