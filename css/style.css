@@ -1406,7 +1406,7 @@ f.slider_section .box .detail-box .btn-box a {
 
 .contact_section .map_container {
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   height: 430px;
   overflow: hidden;
   display: -webkit-box;
@@ -1583,3 +1583,49 @@ f.slider_section .box .detail-box .btn-box a {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+   /* Custom hover effect for the index.html blog bottom section and everywhere else*/
+   .btn-primary{
+    background-color:  #0a1b89;
+    color: rgb(252, 245, 245);
+   }
+   .btn-primary:hover {
+    background-color: #f7941d; /* Change to your desired hover color */
+    color: rgb(240, 231, 231); /* Change to your desired text color on hover */
+    border: none;
+}
+
+/*adding shadow to blog cards*/
+
+.card-blog-shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-blog-shadow:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+ 
+}
+
+
+post-content {
+  display: none;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+post-content.open {
+  display: block;
+}
+
+.post-content {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.open {
+  display: block;
+}
+
+
