@@ -73,3 +73,21 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+function submitForm() {
+    // Get form values
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var message = document.getElementById('message').value;
+
+    // Construct mailto link
+    var mailtoLink = "mailto:mazin_a_abd@yahoo.com"
+        + "?subject=Contact Form Submission"
+        + "&body=Full%20Name:%20" + encodeURIComponent(fullName)
+        + "%0D%0AEmail:%20" + encodeURIComponent(email)
+        + "%0D%0APhone%20Number:%20" + encodeURIComponent(phoneNumber)
+        + "%0D%0AMessage:%20" + encodeURIComponent(message);
+
+    // Open the default email client with the mailto link
+    window.location.href = mailtoLink;
+}
